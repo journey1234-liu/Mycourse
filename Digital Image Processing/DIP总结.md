@@ -1,6 +1,6 @@
 # DIP总结
 
-![](E:\sjtu study\Curriculum\Digital_Image_Processing\fig\main.png)
+<img src=".\fig\main.png" style="zoom: 50%;" />
 
 总结完毕之后可以回头看看第一章PPT。
 
@@ -58,7 +58,9 @@ RGB图：三通道
 
 ### 颜色模型
 
-RGB模型：![](fig\RGB.png)
+RGB模型：
+
+<img src="fig\RGB.png" style="zoom:80%;" />
 
 HSI模型： 色度(Hue)光强度(Intensity)和饱和度(Saturation)
 
@@ -66,7 +68,7 @@ HSI模型： 色度(Hue)光强度(Intensity)和饱和度(Saturation)
 
 处理流程
 
-![](fig\2处理流程.png)
+<img src="fig\2处理流程.png" style="zoom:80%;" />
 
 ### 采样和量化
 
@@ -94,7 +96,9 @@ HSI模型： 色度(Hue)光强度(Intensity)和饱和度(Saturation)
 
 #### 连接：4连接，8连接，m连接
 
-注意m连接，是为了消除8连接的歧义性。有4连接就用4连接，4连接没有就看是否有8连接。![](fig\2连接.png)
+注意m连接，是为了消除8连接的歧义性。有4连接就用4连接，4连接没有就看是否有8连接。
+
+<img src="fig\2连接.png" style="zoom:80%;" />
 
 #### 通路：由连接得来的一组像素
 
@@ -138,7 +142,7 @@ $D_4$距离 $D_8$距离 ：不需要考虑它们之间通路的值
 
 $D_m$距离：需要看它们之间像素的值
 
-![](fig\2距离.png)
+<img src="fig\2距离.png" style="zoom:80%;" />
 
 ### 像素的运算
 
@@ -188,15 +192,19 @@ A为物体区域，B为结构元素
 
 #### 腐蚀
 
-用一个结构元素去探测图像的内部，找出可以放下该元素的区域，类似于收缩图像![](fig\2腐蚀数学形式.png)
+用一个结构元素去探测图像的内部，找出可以放下该元素的区域，类似于收缩图像
+
+<img src="fig\2腐蚀数学形式.png" style="zoom:80%;" />
 
 ![](E:\sjtu study\Curriculum\Digital_Image_Processing\fig\腐蚀.png)
 
 #### 膨胀
 
-腐蚀的对偶运算，看例子会有直观的感受![](fig\2膨胀数学形式.png)
+腐蚀的对偶运算，看例子会有直观的感受
 
-![](fig\2膨胀.png)
+<img src="fig\2膨胀数学形式.png" style="zoom:80%;" />
+
+<img src="fig\2膨胀.png" style="zoom:80%;" />
 
 #### 开运算
 
@@ -216,21 +224,21 @@ A为物体区域，B为结构元素
 
 #### 应用例子
 
-![](fig\2例子1.png)
+<img src="fig\2例子1.png" style="zoom:80%;" />
 
-![](fig\2例子2.png)
+<img src="fig\2例子2.png" style="zoom:80%;" />
 
 ##### 边缘提取
 
-![](fig\2例子3.png)
+<img src="fig\2例子3.png" style="zoom:80%;" />
 
-![](fig\2例子4.png)
+<img src="fig\2例子4.png" style="zoom:80%;" />
 
 ##### 击中击不中变换：
 
 **探测区域中同时具有目标和目标背景的物体，即为寻找的特定目标**
 
-![](fig\2击中击不中.png)
+<img src="fig\2击中击不中.png" style="zoom:80%;" />
 
 用所需元素本身和它的背景去腐蚀图像和图像的补集，得到两个图像的交集对应的位置就是所需元素。
 
@@ -240,7 +248,7 @@ A为物体区域，B为结构元素
 
 是一个连续的过程
 
-![](fig\2细化.png)
+<img src="fig\2细化.png" style="zoom:80%;" />
 
 ##### 粗化
 
@@ -268,7 +276,7 @@ bot-hat低帽变换：**在较亮的背景中求暗的像素点**
 
 ## 第四章：图像增强
 
-![](fig\4思维导图.png)
+<img src="fig\4思维导图.png" style="zoom:80%;" />
 
 ### 点运算
 
@@ -328,7 +336,7 @@ PPT44例题
 
 实质上是低通滤波，会模糊边缘
 
-![](fig\4平滑算法.png)
+<img src="fig\4平滑算法.png" style="zoom:80%;" />
 
 1. 邻域平均：抑制随机噪声
 
@@ -340,7 +348,7 @@ PPT44例题
 
 5. 最小均方差：比较用不同的模板的均值和方差，使用最小方差的模板的灰度均值。
 
-![](fig\4最小方差.png)
+<img src="fig\4最小方差.png" style="zoom:80%;" />
 
 #### 锐化
 
@@ -352,13 +360,13 @@ PPT44例题
 
    Sobel算子
 
-   ![](fig\4sobel.png)
+   <img src="fig\4sobel.png" style="zoom:80%;" />
 
-![](fig\4锐化算子.png)
+<img src="fig\4锐化算子.png" style="zoom:80%;" />
 
 ​		prewitt算子
 
-![](fig\4prewitt.png)
+<img src="fig\4prewitt.png" style="zoom:80%;" />
 
 
 
